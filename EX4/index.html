@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Table</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .tt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      th,td{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 8px 4px;
+      }
+      td{
+        color: #ffff;
+        font-weight: bold;
+      }
+      table,th,td{
+        border: 3px solid #000;
+        border-collapse:  collapse;
+      }
+      .vt{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        text-align: center;
+      }
+      .os{
+        background-color: #ff6e6e;
+      }
+      .os-p{
+        background-color: #ff2323;
+      }
+      .ca{
+        background-color: #ffe557;
+      }
+      .oops{
+        background-color: #94ff75;
+      }
+      .oops-p{
+        background-color: #63ff34;
+      }
+      .wdp{
+        background-color: #96fffa;
+      }
+      .wdp-p{
+        background-color: #0efff4;
+      }
+      .pl {
+        background: linear-gradient(to left, #0af2ff, #04ff04);
+          }
+      .ps{
+        background: #f269ff;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="tt">
+     <table>
+       <tr>
+         <th class="q">Time<br>Peroid</th>
+         <th>09:00A.M-09:50A.M<br>1</th>
+         <th>09:50A.M-10:40A.M<br>2</th>
+         <th>10:40A.M-10:55A.M<br>&nbsp;</th>
+         <th>10:55A.M-11:45A.M<br>3</th>  
+         <th>11:45A.M-12:35p.M<br>4</th>  
+         <th>12:35p.m-01:20p.m<br>&nbsp;</th> 
+         <th>01:20p.M-02:05p.m<br>5</th>  
+         <th>02:05p.M-02:50p.m<br>6</th>  
+         <th>02:50p.M-03:05p.m<br>&nbsp;</th>
+         <th>03:05p.m-03:50p.m<br>7</th>
+         <th>03:50p.m-04:35p.m<br>8</th>
+       </tr>
+       <tr>
+         <th>Monday</th>
+         <td class="wdp">wdp</td>
+         <td class="os">os</td>
+         <th class="vt" rowspan="6">break</th>
+         <td class="ca">ca</td>
+         <td class="oops">oops</td>
+         <th class="vt" rowspan="6">lunch</th>
+         <td class="oops-p" colspan="2">oops-p</td>
+         <th class="vt" rowspan="6">break</th>
+         <td class="os-p" colspan="2">linux-p</td>
+       </tr>
+       <tr>
+         <th>Tuesday</th>
+         <td class="oops">oops</td>
+         <td class="os">os</td>
+         <td class="pl" colspan="2">ped/lib</td>
+         <td class="ca">ca</td>
+         <td class="wdp">wdp</td>
+         <td class="wdp-p" colspan="2">wdp-p</td>
+       </tr>
+       <tr>
+         <th>wednesday</th>
+         <td class="ca">ca</td>
+         <td class="wdp">wdp</td>
+         <td class="os">os</td>
+         <td class="oops">oops</td>
+         <td class="os-p" colspan="2">linux-p</td>
+         <td class="wdp-p" colspan="2">wdp-p</td>
+       </tr>
+       <tr>
+         <th>thursday</th>
+         <td class="oops">oops</td>
+         <td class="wdp">wdp</td>
+         <td class="os">os</td>
+         <td class="ca">ca</td>
+         <td class="ps">ps4</td>
+         <td class="ca">ca</td>
+         <td class="oops-p" colspan="2">oops-p</td>
+       </tr>
+       <tr>
+         <th>friday</th>
+         <td class="os">os</td>
+         <td class="ca">ca</td>
+         <td class="wdp">wdp</td>
+         <td class="oops">oops</td>
+         <td class="wdp-p" colspan="2">wdp-p</td>
+         <td class="oops-p" colspan="2">oops-p</td>
+       </tr>
+       <tr>
+         <th>Saturday</th>
+         <td class="os-p" colspan="2">Linux-p</td>
+         <td class="oops-p" colspan="2">oops-p</td>
+         <td class="os">os</td>
+         <td class="wdp-p">wdp-p</td>
+         <td class="wdp-p" colspan="2">wdp-p</td>
+       </tr>
+     </table>
+   </div>
+  </body>
+</html>
