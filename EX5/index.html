@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Login</title>
+
+    <style>
+
+    body{
+
+      background-image: url('/bg.jpg');
+
+      background-repeat: no-repeat;
+
+      background-size: cover;
+
+      width: 100%;
+
+      height: 100vh;
+
+    }
+
+    .wrapper {
+
+    width: 500px;
+
+    background-color: rgba(255,255,255,0.1);
+
+    border: 2px solid rgba(255, 255, 255, .3);
+
+    backdrop-filter: blur(15px);
+
+    color: #fff;
+
+    border-radius: 10px;
+
+    padding: 30px 40px;
+
+}
+
+
+
+.wrapper h1 {
+
+    font-size: 36px;
+
+    text-align: center;
+
+}
+
+
+
+.input-box {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 50px;
+
+    margin: 30px 0;
+
+}
+
+
+
+.input-box input {
+
+    width: 90%;
+
+    height: 100%;
+
+    background: transparent;
+
+    outline: none;
+
+    border: 2px solid rgba(255, 255, 255, .2);
+
+    border-radius: 46px;
+
+    font-size: 16px;
+
+    color: #fff;
+
+    padding: 5px 10px 5px 20px;
+
+    text-align: left;
+
+}
+
+
+
+.input-box input::placeholder {
+
+    color: #fff;
+
+}
+
+
+
+.btn {
+
+    width: 100%;
+
+    height: 45px;
+
+    background-color: #fff;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 40px;
+
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    color: #333;
+
+    font-weight: 600;
+
+}
+
+    </style>
+
+  </head>
+
+<body>
+
+    <center>
+
+        <div class="wrapper">
+
+            <form id="loginForm">
+
+                <h1>Login</h1>
+
+                <div class="input-box">
+
+                    <input type="text" id="uid" name="uid" placeholder="User Id" required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <input type="password" id="pass" placeholder="Password" name="pass" required>
+
+                </div>
+
+                <button type="button" onclick="checkLogin()" class="btn">Login</button>
+
+            </form>
+
+        </div>
+
+    </center>
+
+
+
+    <script>
+
+        function checkLogin() {
+
+            var Uid = document.getElementById('uid').value;
+
+            var Pass = document.getElementById('pass').value;
+
+
+
+            // Replace the following conditions with your actual login logic
+
+            if (Uid === 'black' && Pass === 'black28') {
+
+                alert('Login successful!');
+
+            } else {
+
+                document.getElementById('loginForm').innerHTML += '<p style="color: red;">Login failed. Please check your credentials.</p>';
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
