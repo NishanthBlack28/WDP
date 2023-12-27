@@ -1,0 +1,25 @@
+      nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 200px;
+      }
+      li{
+        list-style: none;
+      }
+      a{
+        text-decoration: none;NP.jepg
+        color: #000;
+      }
+      
+      tr{
+        text-align: left;
+      }
+      
+      .mark,.mark td{
+        border: 2px solid #000;
+      }
+      
+      .pic{
+      /*  float: right;
+        margin-right: 10px;*/
+      }
