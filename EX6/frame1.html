@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ex6</title>
+</head>
+<body>
+
+  <button id="change">Click me</button>
+
+  <script>
+   let change = document.getElementById('change');
+   let frame2 = parent.document.getElementById('frame2');
+  change.addEventListener('click', function() {
+    if (frame2.src.endsWith('frame2.html')) {
+    frame2.src = 'frame3.html';
+    } else {
+    frame2.src = 'frame2.html';
+    }
+  });
+  </script>
+
+</body>
+</html>
